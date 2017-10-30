@@ -16,8 +16,9 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 set(msg_files
-  "msg/AprilTagDetection.msg"
-  "msg/AprilTagDetectionArray.msg"
+    "msg/Point.msg"
+    "msg/AprilTagDetection.msg"
+    "msg/AprilTagDetectionArray.msg"
 )
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
